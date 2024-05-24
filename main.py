@@ -1,3 +1,7 @@
+#Importa Biblioteca
+
+import os
+
 #Lista Vazia
 
 tarefas = []
@@ -18,7 +22,13 @@ while True:
     else:
         break
 
+#Limpa o console
+
+os.system('cls')
+
 #Exibe a lista com todas as tarefas inseridas na lista
+
+print(f'{'-'*30} LISTA DE TAREFAS {'-'*30}\n')
 
 for tarefa in tarefas:
     print(tarefa)
